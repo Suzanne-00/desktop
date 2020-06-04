@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Suzane-00PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>suzane00.purchase.purchase_order.ItemPurchasePrice</class>
+    <class>suzane00.purchase.purchase_order.PurchaseOrder</class>
+    <class>suzane00.purchase.purchase_order.POFile</class>
+    <class>suzane00.purchase.purchase_order.POFileDiscount</class>
+    <class>suzane00.purchase.purchase_order.PODiscount</class>
+    <class>suzane00.purchase.purchase_order.POMiscCharge</class>
+    <class>suzane00.transaction.Transaction</class>
+    <class>suzane00.source.Employee</class>
+    <class>suzane00.source.Customer</class>
+    <class>suzane00.source.Supplier</class>
+    <class>suzane00.source.CustomerGroup</class>
+    <class>suzane00.source.SupplierGroup</class>
+    <class>suzane00.source.Address</class>
+    <class>suzane00.source.Source</class>
+    <class>suzane00.source.City</class>
+    <class>suzane00.source.Country</class>
+    <class>suzane00.inventory.Unit</class>
+    <class>suzane00.inventory.Product</class>
+    <class>suzane00.inventory.PackedItem</class>
+    <class>suzane00.inventory.ProductType</class>
+    <class>suzane00.inventory.Brand</class>
+    <class>suzane00.inventory.Item</class>
+    <class>suzane00.inventory.Area</class>
+    <class>suzane00.sale.sales_order.ItemPrice</class>
+    <class>suzane00.sale.sales_order.SOMiscCharge</class>
+    <class>suzane00.sale.sales_order.SOFileDiscount</class>
+    <class>suzane00.sale.sales_order.SODiscount</class>
+    <class>suzane00.sale.sales_order.SalesOrder</class>
+    <class>suzane00.sale.sales_order.SellPriceType</class>
+    <class>suzane00.sale.sales_order.SOFile</class>
+    <class>suzane00.inventory.ItemPrice</class>
+    <class>suzane00.inventory.SellPriceType</class>
+    <class>suzane00.sale.sales_invoice.SIDiscount</class>
+    <class>suzane00.sale.sales_invoice.SIFile</class>
+    <class>suzane00.sale.sales_invoice.SIFileDiscount</class>
+    <class>suzane00.sale.sales_invoice.SIMiscCharge</class>
+    <class>suzane00.sale.sales_invoice.SalesInvoice</class>
+    <class>suzane00.purchase.vendor_invoice.VIDiscount</class>
+    <class>suzane00.purchase.vendor_invoice.VIFile</class>
+    <class>suzane00.purchase.vendor_invoice.VIFileDiscount</class>
+    <class>suzane00.purchase.vendor_invoice.VIMiscCharge</class>
+    <class>suzane00.purchase.vendor_invoice.VendorInvoice</class>
+    <class>suzane00.inventory.stock.Stock</class>
+    <class>suzane00.purchase.order_receival.ORFile</class>
+    <class>suzane00.purchase.order_receival.OrderReceival</class>
+    <class>suzane00.sale.stock_reservation.SRFile</class>
+    <class>suzane00.sale.stock_reservation.StockReservation</class>
+    <class>suzane00.sale.delivery_order.DOFile</class>
+    <class>suzane00.sale.delivery_order.DeliveryOrder</class>
+    <class>suzane00.purchase.purchase_retur.PRFile</class>
+    <class>suzane00.purchase.purchase_retur.PurchaseRetur</class>
+    <class>suzane00.sale.sales_retur.STFile</class>
+    <class>suzane00.sale.sales_retur.SalesRetur</class>
+    <class>suzane00.sale.sales_payment.SPFile</class>
+    <class>suzane00.sale.sales_payment.SalesPayment</class>
+    <class>suzane00.purchase.vendor_payment.VPFile</class>
+    <class>suzane00.purchase.vendor_payment.VendorPayment</class>
+    <class>suzane00.warehouse.stock_adjustment.SAFile</class>
+    <class>suzane00.warehouse.stock_adjustment.StockAdjustment</class>
+    <class>suzane00.warehouse.transfer_stock.TSFile</class>
+    <class>suzane00.warehouse.transfer_stock.TransferStock</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/TestDB"/>
+      <property name="javax.persistence.jdbc.user" value="dbexerphi_dba"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
